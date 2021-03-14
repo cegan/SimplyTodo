@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D429B0425FD7A6600C01754 /* todoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* todoService.swift */; };
-		4D429B0525FD7A6600C01754 /* todoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* todoService.swift */; };
-		4D429B0625FD7A6600C01754 /* todoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* todoService.swift */; };
+		4D429B0425FD7A6600C01754 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* TodoService.swift */; };
+		4D429B0525FD7A6600C01754 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* TodoService.swift */; };
+		4D429B0625FD7A6600C01754 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* TodoService.swift */; };
 		4D429B3B25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */; };
 		4D429B3C25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */; };
 		4D429B3D25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */; };
@@ -66,7 +66,7 @@
 		1031D2946EE177100172C8C9 /* Pods_SimplyTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplyTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6704B05DC6FAD361321384 /* Pods-SimplyTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplyTodo.release.xcconfig"; path = "Target Support Files/Pods-SimplyTodo/Pods-SimplyTodo.release.xcconfig"; sourceTree = "<group>"; };
 		473E96639D600ACDECE756B2 /* Pods-SimplyTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplyTodo.debug.xcconfig"; path = "Target Support Files/Pods-SimplyTodo/Pods-SimplyTodo.debug.xcconfig"; sourceTree = "<group>"; };
-		4D429B0325FD7A6600C01754 /* todoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoService.swift; sourceTree = "<group>"; };
+		4D429B0325FD7A6600C01754 /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
 		4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewToDoViewController.swift; sourceTree = "<group>"; };
 		4D429B3A25FD9DCC00C01754 /* AddNewToDoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewToDoViewController.xib; sourceTree = "<group>"; };
 		4D429B4825FDA15000C01754 /* EditToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToDoViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		4D429B0225FD7A4B00C01754 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4D429B0325FD7A6600C01754 /* todoService.swift */,
+				4D429B0325FD7A6600C01754 /* TodoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 				4D883D8325FD73D10078A338 /* TodoTableViewController.swift in Sources */,
 				4D429B7225FDE53700C01754 /* UIViewControllerExtensions.swift in Sources */,
 				4D883D3625FD71F80078A338 /* AppDelegate.swift in Sources */,
-				4D429B0425FD7A6600C01754 /* todoService.swift in Sources */,
+				4D429B0425FD7A6600C01754 /* TodoService.swift in Sources */,
 				4D883D3825FD71F80078A338 /* SceneDelegate.swift in Sources */,
 				4D429B4A25FDA15000C01754 /* EditToDoViewController.swift in Sources */,
 				4D883D8E25FD74660078A338 /* Todo.swift in Sources */,
@@ -521,7 +521,7 @@
 				4D883D8F25FD74660078A338 /* Todo.swift in Sources */,
 				4D883D8425FD73D10078A338 /* TodoTableViewController.swift in Sources */,
 				4D429B6925FDAF8A00C01754 /* ApplicationTodos.swift in Sources */,
-				4D429B0525FD7A6600C01754 /* todoService.swift in Sources */,
+				4D429B0525FD7A6600C01754 /* TodoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +536,7 @@
 				4D883D9025FD74660078A338 /* Todo.swift in Sources */,
 				4D883D8525FD73D10078A338 /* TodoTableViewController.swift in Sources */,
 				4D429B6A25FDAF8A00C01754 /* ApplicationTodos.swift in Sources */,
-				4D429B0625FD7A6600C01754 /* todoService.swift in Sources */,
+				4D429B0625FD7A6600C01754 /* TodoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

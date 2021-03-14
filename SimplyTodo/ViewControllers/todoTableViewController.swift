@@ -7,10 +7,6 @@
 
 import UIKit
 
-
-
-
-
 class TodoTableViewController: UITableViewController {
     
     var todoList: [Todo] = [Todo]()
@@ -138,7 +134,7 @@ class TodoTableViewController: UITableViewController {
     
     @objc private func retrieveTodos() {
         
-        todoService().retrieveTodos() { results in
+        TodoService().retrieveTodos() { results in
             ApplicationTodos.shared.todos = results
             self.todoList = results
             self.tableView.refreshControl?.endRefreshing()

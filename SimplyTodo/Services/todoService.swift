@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-final class todoService {
+final class TodoService {
     
     func retrieveTodos(success: @escaping ([Todo]) -> Void) {
         AF.request("https://604bb216ee7cb900176a2816.mockapi.io/dtn-test/tasks").responseDecodable { (response: AFDataResponse<[Todo]>) in

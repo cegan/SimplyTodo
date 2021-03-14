@@ -11,8 +11,8 @@ import Foundation
 final class Todo: Decodable {
   
     var id: String = ""
-    var order: Int = 0
     var name: String!
+    var order: Int = Int.random(in: 1...5000)
     var isComplete: Bool = false
     var statuses: [TodoStatus] = [TodoStatus(displayName: "Complete"),
                                   TodoStatus(displayName: "InComplete")]
@@ -25,8 +25,8 @@ final class Todo: Decodable {
     
     init(name: String) {
         self.name = name
-        self.order = 0
         self.id = "0"
+        self.order = Int.random(in: 1...5000)
         self.isComplete = false
         self.statuses = [TodoStatus(displayName: "Complete"),
                          TodoStatus(displayName: "InComplete")]
