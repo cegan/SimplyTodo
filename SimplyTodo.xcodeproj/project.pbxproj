@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D429B0425FD7A6600C01754 /* todoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* todoService.swift */; };
+		4D429B0525FD7A6600C01754 /* todoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* todoService.swift */; };
+		4D429B0625FD7A6600C01754 /* todoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B0325FD7A6600C01754 /* todoService.swift */; };
+		4D429B3B25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */; };
+		4D429B3C25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */; };
+		4D429B3D25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */; };
+		4D429B3E25FD9DCC00C01754 /* AddNewToDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D429B3A25FD9DCC00C01754 /* AddNewToDoViewController.xib */; };
+		4D429B3F25FD9DCC00C01754 /* AddNewToDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D429B3A25FD9DCC00C01754 /* AddNewToDoViewController.xib */; };
+		4D429B4025FD9DCC00C01754 /* AddNewToDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D429B3A25FD9DCC00C01754 /* AddNewToDoViewController.xib */; };
+		4D429B4A25FDA15000C01754 /* EditToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B4825FDA15000C01754 /* EditToDoViewController.swift */; };
+		4D429B4B25FDA15000C01754 /* EditToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B4825FDA15000C01754 /* EditToDoViewController.swift */; };
+		4D429B4C25FDA15000C01754 /* EditToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B4825FDA15000C01754 /* EditToDoViewController.swift */; };
+		4D429B4D25FDA15000C01754 /* EditToDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D429B4925FDA15000C01754 /* EditToDoViewController.xib */; };
+		4D429B4E25FDA15000C01754 /* EditToDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D429B4925FDA15000C01754 /* EditToDoViewController.xib */; };
+		4D429B4F25FDA15000C01754 /* EditToDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D429B4925FDA15000C01754 /* EditToDoViewController.xib */; };
+		4D429B6825FDAF8A00C01754 /* ApplicationTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B6725FDAF8A00C01754 /* ApplicationTodos.swift */; };
+		4D429B6925FDAF8A00C01754 /* ApplicationTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B6725FDAF8A00C01754 /* ApplicationTodos.swift */; };
+		4D429B6A25FDAF8A00C01754 /* ApplicationTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B6725FDAF8A00C01754 /* ApplicationTodos.swift */; };
+		4D429B7225FDE53700C01754 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B7125FDE53700C01754 /* UIViewControllerExtensions.swift */; };
+		4D429B7325FDE53700C01754 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B7125FDE53700C01754 /* UIViewControllerExtensions.swift */; };
+		4D429B7425FDE53700C01754 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D429B7125FDE53700C01754 /* UIViewControllerExtensions.swift */; };
+		4D883D3625FD71F80078A338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D3525FD71F80078A338 /* AppDelegate.swift */; };
+		4D883D3825FD71F80078A338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D3725FD71F80078A338 /* SceneDelegate.swift */; };
+		4D883D3F25FD71F90078A338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D883D3E25FD71F90078A338 /* Assets.xcassets */; };
+		4D883D4225FD71F90078A338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D883D4025FD71F90078A338 /* LaunchScreen.storyboard */; };
+		4D883D4D25FD71F90078A338 /* SimplyTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D4C25FD71F90078A338 /* SimplyTodoTests.swift */; };
+		4D883D5825FD71F90078A338 /* SimplyTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D5725FD71F90078A338 /* SimplyTodoUITests.swift */; };
+		4D883D8325FD73D10078A338 /* todoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D8225FD73D10078A338 /* todoTableViewController.swift */; };
+		4D883D8425FD73D10078A338 /* todoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D8225FD73D10078A338 /* todoTableViewController.swift */; };
+		4D883D8525FD73D10078A338 /* todoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D8225FD73D10078A338 /* todoTableViewController.swift */; };
+		4D883D8E25FD74660078A338 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D8D25FD74660078A338 /* Todo.swift */; };
+		4D883D8F25FD74660078A338 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D8D25FD74660078A338 /* Todo.swift */; };
+		4D883D9025FD74660078A338 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D883D8D25FD74660078A338 /* Todo.swift */; };
+		75D8BC3B19E106E9462DD3FC /* Pods_SimplyTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1031D2946EE177100172C8C9 /* Pods_SimplyTodo.framework */; };
+		82ABDFC5B36EB80374B175EC /* Pods_SimplyTodo_SimplyTodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41B6C281DA6D1752AEA7837 /* Pods_SimplyTodo_SimplyTodoUITests.framework */; };
+		964DEA91204FC4C92B884471 /* Pods_SimplyTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE90CF936A0299D01FC54CD4 /* Pods_SimplyTodoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D883D4925FD71F90078A338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D883D2A25FD71F80078A338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D883D3125FD71F80078A338;
+			remoteInfo = SimplyTodo;
+		};
+		4D883D5425FD71F90078A338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D883D2A25FD71F80078A338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D883D3125FD71F80078A338;
+			remoteInfo = SimplyTodo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1031D2946EE177100172C8C9 /* Pods_SimplyTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplyTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6704B05DC6FAD361321384 /* Pods-SimplyTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplyTodo.release.xcconfig"; path = "Target Support Files/Pods-SimplyTodo/Pods-SimplyTodo.release.xcconfig"; sourceTree = "<group>"; };
+		473E96639D600ACDECE756B2 /* Pods-SimplyTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplyTodo.debug.xcconfig"; path = "Target Support Files/Pods-SimplyTodo/Pods-SimplyTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		4D429B0325FD7A6600C01754 /* todoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoService.swift; sourceTree = "<group>"; };
+		4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewToDoViewController.swift; sourceTree = "<group>"; };
+		4D429B3A25FD9DCC00C01754 /* AddNewToDoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewToDoViewController.xib; sourceTree = "<group>"; };
+		4D429B4825FDA15000C01754 /* EditToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToDoViewController.swift; sourceTree = "<group>"; };
+		4D429B4925FDA15000C01754 /* EditToDoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditToDoViewController.xib; sourceTree = "<group>"; };
+		4D429B6725FDAF8A00C01754 /* ApplicationTodos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTodos.swift; sourceTree = "<group>"; };
+		4D429B7125FDE53700C01754 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		4D883D3225FD71F80078A338 /* SimplyTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplyTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D883D3525FD71F80078A338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D883D3725FD71F80078A338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4D883D3E25FD71F90078A338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D883D4125FD71F90078A338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D883D4325FD71F90078A338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D883D4825FD71F90078A338 /* SimplyTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplyTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D883D4C25FD71F90078A338 /* SimplyTodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyTodoTests.swift; sourceTree = "<group>"; };
+		4D883D4E25FD71F90078A338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D883D5325FD71F90078A338 /* SimplyTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplyTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D883D5725FD71F90078A338 /* SimplyTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyTodoUITests.swift; sourceTree = "<group>"; };
+		4D883D5925FD71F90078A338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D883D8225FD73D10078A338 /* todoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = todoTableViewController.swift; sourceTree = "<group>"; };
+		4D883D8D25FD74660078A338 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		4DF2A19DE46A341B170B8E08 /* Pods-SimplyTodo-SimplyTodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplyTodo-SimplyTodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimplyTodo-SimplyTodoUITests/Pods-SimplyTodo-SimplyTodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A39C30D757B62909272F4C7C /* Pods-SimplyTodo-SimplyTodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplyTodo-SimplyTodoUITests.release.xcconfig"; path = "Target Support Files/Pods-SimplyTodo-SimplyTodoUITests/Pods-SimplyTodo-SimplyTodoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C41B6C281DA6D1752AEA7837 /* Pods_SimplyTodo_SimplyTodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplyTodo_SimplyTodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D84199F974FF0E58F7D563 /* Pods-SimplyTodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplyTodoTests.release.xcconfig"; path = "Target Support Files/Pods-SimplyTodoTests/Pods-SimplyTodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA2E0B94672D7C898C739354 /* Pods-SimplyTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplyTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-SimplyTodoTests/Pods-SimplyTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE90CF936A0299D01FC54CD4 /* Pods_SimplyTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplyTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D883D2F25FD71F80078A338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D8BC3B19E106E9462DD3FC /* Pods_SimplyTodo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D883D4525FD71F90078A338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964DEA91204FC4C92B884471 /* Pods_SimplyTodoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D883D5025FD71F90078A338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82ABDFC5B36EB80374B175EC /* Pods_SimplyTodo_SimplyTodoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34918D5512E01CE7DA2FD28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				473E96639D600ACDECE756B2 /* Pods-SimplyTodo.debug.xcconfig */,
+				1D6704B05DC6FAD361321384 /* Pods-SimplyTodo.release.xcconfig */,
+				4DF2A19DE46A341B170B8E08 /* Pods-SimplyTodo-SimplyTodoUITests.debug.xcconfig */,
+				A39C30D757B62909272F4C7C /* Pods-SimplyTodo-SimplyTodoUITests.release.xcconfig */,
+				EA2E0B94672D7C898C739354 /* Pods-SimplyTodoTests.debug.xcconfig */,
+				D5D84199F974FF0E58F7D563 /* Pods-SimplyTodoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D429B0225FD7A4B00C01754 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4D429B0325FD7A6600C01754 /* todoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4D429B2E25FD9D6400C01754 /* AddToDo */ = {
+			isa = PBXGroup;
+			children = (
+				4D429B3925FD9DCC00C01754 /* AddNewToDoViewController.swift */,
+				4D429B3A25FD9DCC00C01754 /* AddNewToDoViewController.xib */,
+			);
+			path = AddToDo;
+			sourceTree = "<group>";
+		};
+		4D429B4725FDA12200C01754 /* EditToDo */ = {
+			isa = PBXGroup;
+			children = (
+				4D429B4825FDA15000C01754 /* EditToDoViewController.swift */,
+				4D429B4925FDA15000C01754 /* EditToDoViewController.xib */,
+			);
+			path = EditToDo;
+			sourceTree = "<group>";
+		};
+		4D429B5C25FDA9A400C01754 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				4D429B7125FDE53700C01754 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		4D883D2925FD71F80078A338 = {
+			isa = PBXGroup;
+			children = (
+				4D883D3425FD71F80078A338 /* SimplyTodo */,
+				4D883D4B25FD71F90078A338 /* SimplyTodoTests */,
+				4D883D5625FD71F90078A338 /* SimplyTodoUITests */,
+				4D883D3325FD71F80078A338 /* Products */,
+				34918D5512E01CE7DA2FD28C /* Pods */,
+				51535832DF18AFD22E3CE073 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D883D3325FD71F80078A338 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D883D3225FD71F80078A338 /* SimplyTodo.app */,
+				4D883D4825FD71F90078A338 /* SimplyTodoTests.xctest */,
+				4D883D5325FD71F90078A338 /* SimplyTodoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D883D3425FD71F80078A338 /* SimplyTodo */ = {
+			isa = PBXGroup;
+			children = (
+				4D429B6725FDAF8A00C01754 /* ApplicationTodos.swift */,
+				4D883D3525FD71F80078A338 /* AppDelegate.swift */,
+				4D883D3725FD71F80078A338 /* SceneDelegate.swift */,
+				4D883D4025FD71F90078A338 /* LaunchScreen.storyboard */,
+				4D883D4325FD71F90078A338 /* Info.plist */,
+				4D429B5C25FDA9A400C01754 /* Extenstions */,
+				4D429B0225FD7A4B00C01754 /* Services */,
+				4D883D8C25FD74350078A338 /* Models */,
+				4D883D7B25FD73B00078A338 /* ViewControllers */,
+				4D883D3E25FD71F90078A338 /* Assets.xcassets */,
+			);
+			path = SimplyTodo;
+			sourceTree = "<group>";
+		};
+		4D883D4B25FD71F90078A338 /* SimplyTodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D883D4C25FD71F90078A338 /* SimplyTodoTests.swift */,
+				4D883D4E25FD71F90078A338 /* Info.plist */,
+			);
+			path = SimplyTodoTests;
+			sourceTree = "<group>";
+		};
+		4D883D5625FD71F90078A338 /* SimplyTodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D883D5725FD71F90078A338 /* SimplyTodoUITests.swift */,
+				4D883D5925FD71F90078A338 /* Info.plist */,
+			);
+			path = SimplyTodoUITests;
+			sourceTree = "<group>";
+		};
+		4D883D7B25FD73B00078A338 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D883D8225FD73D10078A338 /* todoTableViewController.swift */,
+				4D429B4725FDA12200C01754 /* EditToDo */,
+				4D429B2E25FD9D6400C01754 /* AddToDo */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4D883D8C25FD74350078A338 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D883D8D25FD74660078A338 /* Todo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51535832DF18AFD22E3CE073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1031D2946EE177100172C8C9 /* Pods_SimplyTodo.framework */,
+				C41B6C281DA6D1752AEA7837 /* Pods_SimplyTodo_SimplyTodoUITests.framework */,
+				FE90CF936A0299D01FC54CD4 /* Pods_SimplyTodoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D883D3125FD71F80078A338 /* SimplyTodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D883D5C25FD71F90078A338 /* Build configuration list for PBXNativeTarget "SimplyTodo" */;
+			buildPhases = (
+				9B134DAAA48BB21DDD26A38D /* [CP] Check Pods Manifest.lock */,
+				4D883D2E25FD71F80078A338 /* Sources */,
+				4D883D2F25FD71F80078A338 /* Frameworks */,
+				4D883D3025FD71F80078A338 /* Resources */,
+				2CD80E7771AF5DD779DE02B2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplyTodo;
+			productName = SimplyTodo;
+			productReference = 4D883D3225FD71F80078A338 /* SimplyTodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D883D4725FD71F90078A338 /* SimplyTodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D883D5F25FD71F90078A338 /* Build configuration list for PBXNativeTarget "SimplyTodoTests" */;
+			buildPhases = (
+				BCA0F3C52F43D8C03AD2673B /* [CP] Check Pods Manifest.lock */,
+				4D883D4425FD71F90078A338 /* Sources */,
+				4D883D4525FD71F90078A338 /* Frameworks */,
+				4D883D4625FD71F90078A338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D883D4A25FD71F90078A338 /* PBXTargetDependency */,
+			);
+			name = SimplyTodoTests;
+			productName = SimplyTodoTests;
+			productReference = 4D883D4825FD71F90078A338 /* SimplyTodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D883D5225FD71F90078A338 /* SimplyTodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D883D6225FD71F90078A338 /* Build configuration list for PBXNativeTarget "SimplyTodoUITests" */;
+			buildPhases = (
+				0882CCE612E711B34D7D96BE /* [CP] Check Pods Manifest.lock */,
+				4D883D4F25FD71F90078A338 /* Sources */,
+				4D883D5025FD71F90078A338 /* Frameworks */,
+				4D883D5125FD71F90078A338 /* Resources */,
+				094184F22CF9A900297CF1C6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D883D5525FD71F90078A338 /* PBXTargetDependency */,
+			);
+			name = SimplyTodoUITests;
+			productName = SimplyTodoUITests;
+			productReference = 4D883D5325FD71F90078A338 /* SimplyTodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D883D2A25FD71F80078A338 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					4D883D3125FD71F80078A338 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					4D883D4725FD71F90078A338 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 4D883D3125FD71F80078A338;
+					};
+					4D883D5225FD71F90078A338 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 4D883D3125FD71F80078A338;
+					};
+				};
+			};
+			buildConfigurationList = 4D883D2D25FD71F80078A338 /* Build configuration list for PBXProject "SimplyTodo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D883D2925FD71F80078A338;
+			productRefGroup = 4D883D3325FD71F80078A338 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D883D3125FD71F80078A338 /* SimplyTodo */,
+				4D883D4725FD71F90078A338 /* SimplyTodoTests */,
+				4D883D5225FD71F90078A338 /* SimplyTodoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D883D3025FD71F80078A338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D883D4225FD71F90078A338 /* LaunchScreen.storyboard in Resources */,
+				4D429B3E25FD9DCC00C01754 /* AddNewToDoViewController.xib in Resources */,
+				4D429B4D25FDA15000C01754 /* EditToDoViewController.xib in Resources */,
+				4D883D3F25FD71F90078A338 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D883D4625FD71F90078A338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D429B4E25FDA15000C01754 /* EditToDoViewController.xib in Resources */,
+				4D429B3F25FD9DCC00C01754 /* AddNewToDoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D883D5125FD71F90078A338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D429B4F25FDA15000C01754 /* EditToDoViewController.xib in Resources */,
+				4D429B4025FD9DCC00C01754 /* AddNewToDoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0882CCE612E711B34D7D96BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimplyTodo-SimplyTodoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		094184F22CF9A900297CF1C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimplyTodo-SimplyTodoUITests/Pods-SimplyTodo-SimplyTodoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimplyTodo-SimplyTodoUITests/Pods-SimplyTodo-SimplyTodoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimplyTodo-SimplyTodoUITests/Pods-SimplyTodo-SimplyTodoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CD80E7771AF5DD779DE02B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimplyTodo/Pods-SimplyTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimplyTodo/Pods-SimplyTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimplyTodo/Pods-SimplyTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B134DAAA48BB21DDD26A38D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimplyTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA0F3C52F43D8C03AD2673B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimplyTodoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D883D2E25FD71F80078A338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D429B3B25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */,
+				4D883D8325FD73D10078A338 /* todoTableViewController.swift in Sources */,
+				4D429B7225FDE53700C01754 /* UIViewControllerExtensions.swift in Sources */,
+				4D883D3625FD71F80078A338 /* AppDelegate.swift in Sources */,
+				4D429B0425FD7A6600C01754 /* todoService.swift in Sources */,
+				4D883D3825FD71F80078A338 /* SceneDelegate.swift in Sources */,
+				4D429B4A25FDA15000C01754 /* EditToDoViewController.swift in Sources */,
+				4D883D8E25FD74660078A338 /* Todo.swift in Sources */,
+				4D429B6825FDAF8A00C01754 /* ApplicationTodos.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D883D4425FD71F90078A338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D429B4B25FDA15000C01754 /* EditToDoViewController.swift in Sources */,
+				4D883D4D25FD71F90078A338 /* SimplyTodoTests.swift in Sources */,
+				4D429B3C25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */,
+				4D429B7325FDE53700C01754 /* UIViewControllerExtensions.swift in Sources */,
+				4D883D8F25FD74660078A338 /* Todo.swift in Sources */,
+				4D883D8425FD73D10078A338 /* todoTableViewController.swift in Sources */,
+				4D429B6925FDAF8A00C01754 /* ApplicationTodos.swift in Sources */,
+				4D429B0525FD7A6600C01754 /* todoService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D883D4F25FD71F90078A338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D429B4C25FDA15000C01754 /* EditToDoViewController.swift in Sources */,
+				4D883D5825FD71F90078A338 /* SimplyTodoUITests.swift in Sources */,
+				4D429B3D25FD9DCC00C01754 /* AddNewToDoViewController.swift in Sources */,
+				4D429B7425FDE53700C01754 /* UIViewControllerExtensions.swift in Sources */,
+				4D883D9025FD74660078A338 /* Todo.swift in Sources */,
+				4D883D8525FD73D10078A338 /* todoTableViewController.swift in Sources */,
+				4D429B6A25FDAF8A00C01754 /* ApplicationTodos.swift in Sources */,
+				4D429B0625FD7A6600C01754 /* todoService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D883D4A25FD71F90078A338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D883D3125FD71F80078A338 /* SimplyTodo */;
+			targetProxy = 4D883D4925FD71F90078A338 /* PBXContainerItemProxy */;
+		};
+		4D883D5525FD71F90078A338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D883D3125FD71F80078A338 /* SimplyTodo */;
+			targetProxy = 4D883D5425FD71F90078A338 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D883D4025FD71F90078A338 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D883D4125FD71F90078A338 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D883D5A25FD71F90078A338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D883D5B25FD71F90078A338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D883D5D25FD71F90078A338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473E96639D600ACDECE756B2 /* Pods-SimplyTodo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimplyTodo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egan-project.SimplyTodo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D883D5E25FD71F90078A338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6704B05DC6FAD361321384 /* Pods-SimplyTodo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimplyTodo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egan-project.SimplyTodo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D883D6025FD71F90078A338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA2E0B94672D7C898C739354 /* Pods-SimplyTodoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimplyTodoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egan-project.SimplyTodoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimplyTodo.app/SimplyTodo";
+			};
+			name = Debug;
+		};
+		4D883D6125FD71F90078A338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D84199F974FF0E58F7D563 /* Pods-SimplyTodoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimplyTodoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egan-project.SimplyTodoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimplyTodo.app/SimplyTodo";
+			};
+			name = Release;
+		};
+		4D883D6325FD71F90078A338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF2A19DE46A341B170B8E08 /* Pods-SimplyTodo-SimplyTodoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimplyTodoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egan-project.SimplyTodoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimplyTodo;
+			};
+			name = Debug;
+		};
+		4D883D6425FD71F90078A338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39C30D757B62909272F4C7C /* Pods-SimplyTodo-SimplyTodoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimplyTodoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egan-project.SimplyTodoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimplyTodo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D883D2D25FD71F80078A338 /* Build configuration list for PBXProject "SimplyTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D883D5A25FD71F90078A338 /* Debug */,
+				4D883D5B25FD71F90078A338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D883D5C25FD71F90078A338 /* Build configuration list for PBXNativeTarget "SimplyTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D883D5D25FD71F90078A338 /* Debug */,
+				4D883D5E25FD71F90078A338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D883D5F25FD71F90078A338 /* Build configuration list for PBXNativeTarget "SimplyTodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D883D6025FD71F90078A338 /* Debug */,
+				4D883D6125FD71F90078A338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D883D6225FD71F90078A338 /* Build configuration list for PBXNativeTarget "SimplyTodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D883D6325FD71F90078A338 /* Debug */,
+				4D883D6425FD71F90078A338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D883D2A25FD71F80078A338 /* Project object */;
+}
