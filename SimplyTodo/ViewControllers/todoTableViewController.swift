@@ -205,13 +205,22 @@ class TodoTableViewController: UITableViewController {
 }
 
 
-extension TodoTableViewController: SomeDelegate {
+extension TodoTableViewController: TodoDelegate {
     
     func TodoWasModified(todo: Todo) {
 
         if let index = ApplicationTodos.shared.todos.firstIndex(where: { $0.id == todo.id }) {
             ApplicationTodos.shared.todos[index] = todo
             todoList = ApplicationTodos.shared.todos
+        }
+    }
+    
+    func TodoWasDelted(todo: Todo) {
+       
+        if let index = ApplicationTodos.shared.todos.firstIndex(where: {$0.id == todo.id}) {
+            ApplicationTodos.shared.todos.remove(at: index)
+            todoList = ApplicationTodos.shared.todos
+            tableView.reloadData()
         }
     }
     

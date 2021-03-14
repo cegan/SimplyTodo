@@ -8,9 +8,10 @@
 import UIKit
 
 
-protocol SomeDelegate{
+protocol TodoDelegate{
     func TodoWasModified(todo: Todo)
     func TodoWasAdded(todo: Todo)
+    func TodoWasDelted(todo: Todo)
 }
 
 class EditToDoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -20,8 +21,7 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var todoTextView: UITextView!
     
     var todoToEdit: Todo?
-    var todoStatusOptions = ["Completed", "Incomplete"]
-    var delegate: SomeDelegate!
+    var delegate: TodoDelegate!
     
     init(withTodo: Todo) {
         super.init(nibName: "EditToDoViewController", bundle: nil)
@@ -40,8 +40,6 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
         
         todoStatusTableView.delegate = self
         todoStatusTableView.dataSource = self
-        todoStatusTableView.layoutMargins = UIEdgeInsets.zero
-        todoStatusTableView.separatorInset = UIEdgeInsets.zero
         todoStatusTableView.register(UITableViewCell.self, forCellReuseIdentifier: "todoStatusCellIdentifier")
         todoTextView.text = todoToEdit?.name
     }
@@ -59,7 +57,7 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    private func installNavigationItems(){
+    private func installNavigationItems() {
     
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "trash")?.withRenderingMode(.alwaysOriginal),
                                                                  style: .plain,
@@ -77,12 +75,11 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
         let optionMenu = UIAlertController(title: nil, message: "Delete This Todo?", preferredStyle: .actionSheet)
 
             let deleteAction = UIAlertAction(title: "Delete", style: .default, handler: { [self](alert: UIAlertAction!) -> Void in
-            
-                if let index = ApplicationTodos.shared.todos.firstIndex(where: {$0.id == todoToEdit?.id}) {
-                    ApplicationTodos.shared.todos.remove(at: index)
-                    navigationController?.popViewController(animated: true)
-                }
+                delegate.TodoWasDelted(todo: todoToEdit!)
+                navigationController?.popViewController(animated: true)
             })
+        
+            deleteAction.setValue(UIColor.red, forKey: "titleTextColor")
     
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
            
@@ -92,32 +89,34 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.todoStatusOptions.count
+        return (self.todoToEdit?.statuses.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoStatusCellIdentifier", for: indexPath)
-        let statusOption =  self.todoStatusOptions[indexPath.row]
+        let statusOption = todoToEdit?.statuses[indexPath.row]
         
-        switch indexPath.row {
-        case 0:
-            todoToEdit?.isComplete = true
-        case 1:
-            todoToEdit?.isComplete = false
-       
-        default:
-            todoToEdit?.isComplete = false
-        }
         
-        cell.textLabel?.text = statusOption
+        //todoToEdit?.todoStatus == .isComplete
+        
+//        switch indexPath.row {
+//        case 0:
+//
+//            cell.accessoryType = todoToEdit?.todoStatus == .isComplete ? .checkmark : .none
+//            
+//        case 1:
+//            cell.accessoryType = todoToEdit?.todoStatus == .isComplete ? .checkmark : .none
+//            //cell.accessoryType = todoToEdit!.isComplete ? .checkmark : .none
+//       
+//        default:
+//            todoToEdit?.isComplete = false
+//        }
+        
+        cell.textLabel?.text = statusOption?.displayName
         cell.selectionStyle = .none
         cell.tintColor = .red
-        cell.accessoryType = todoToEdit!.isComplete ? .checkmark : .none
 
         return cell
     }
@@ -133,17 +132,14 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
             return
         }
         
-//        todoToEdit?.isComplete = !self.todoToEdit!.isComplete
+        todoToEdit?.isComplete = !self.todoToEdit!.isComplete
         todoStatusTableView.reloadData()
-        
     }
 
   
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Todo Status"
     }
-    
-   
 }
 
 

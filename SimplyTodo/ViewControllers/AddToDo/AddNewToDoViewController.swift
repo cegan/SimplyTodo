@@ -10,7 +10,7 @@ import UIKit
 class AddNewToDoViewController: UIViewController {
     
     @IBOutlet weak var todoTextView: UITextView!
-    var delegate: SomeDelegate!
+    var delegate: TodoDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
