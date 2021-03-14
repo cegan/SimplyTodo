@@ -33,7 +33,7 @@ class AddNewToDoViewController: UIViewController {
     }
     
     @objc private func doneButtonTapped() {
-        delegate.TodoWasAdded(todo: Todo(name: self.todoTextView.text))
+        delegate.TodoWasAdded(todo: Todo(name: todoTextView.text))
         dismiss(animated: true, completion: nil)
     }
     
