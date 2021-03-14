@@ -98,7 +98,17 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoStatusCellIdentifier", for: indexPath)
         let statusOption = todoToEdit.statuses[indexPath.row]
         
-        cell.accessoryType = todoToEdit.statuses[indexPath.row].isSelected ? .checkmark : .none
+        
+        switch indexPath.row {
+        case 0:
+            cell.accessoryType = todoToEdit.isComplete ? .checkmark : .none
+        case 1:
+            cell.accessoryType = !todoToEdit.isComplete ? .checkmark : .none
+           
+        default:
+            cell.accessoryType = .none
+        }
+        
         cell.textLabel?.text = statusOption.displayName
         cell.selectionStyle = .none
         cell.tintColor = .red
@@ -108,11 +118,16 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-        let result  = self.todoToEdit.statuses[indexPath.row]
-
         resetStatuses()
         
-        todoToEdit.statuses[indexPath.row].isSelected = !result.isSelected
+        switch indexPath.row {
+        case 0:
+            todoToEdit.isComplete = true
+        case 1:
+            todoToEdit.isComplete = false
+        default:
+            todoToEdit.isComplete = false
+        }
         
         todoStatusTableView.reloadData()
     }
