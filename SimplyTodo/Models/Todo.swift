@@ -10,13 +10,17 @@ import Foundation
 
 final class Todo: Decodable {
   
-    var id: String!
-    var order: Int
+    var id: String = ""
+    var order: Int = 0
     var name: String!
-    var isComplete: Bool
+    var isComplete: Bool = false
     var statuses: [TodoStatus] = [TodoStatus(displayName: "Complete"),
                                   TodoStatus(displayName: "InComplete")]
-   // var createdAt: Date!
+  
+    
+    init() {
+
+    }
     
     
     init(name: String) {
@@ -28,39 +32,28 @@ final class Todo: Decodable {
                          TodoStatus(displayName: "InComplete")]
     }
     
+
     enum CodingKeys: String, CodingKey {
         case id
         case order
         case name
         case isComplete
-       // case createdAt
     }
 }
-
-
-
 
 
 
 class TodoStatus {
 
     var displayName: String!
-    var isSelected: Bool!
-    var todoStatus: TodoStatusEnum = .none
-
+    var isSelected: Bool = false
+   
     init(displayName: String) {
         self.displayName = displayName
-        self.isSelected = false
-        self.todoStatus = .none
     }
 }
 
 
-enum TodoStatusEnum: Int {
-    case isComplete = 0
-    case isInComplete = 1
-    case none = 2
-}
 
 
 

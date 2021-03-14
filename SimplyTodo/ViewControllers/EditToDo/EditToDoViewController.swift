@@ -20,7 +20,7 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var todoStatusTableView: UITableView!
     @IBOutlet weak var todoTextView: UITextView!
     
-    var todoToEdit: Todo?
+    var todoToEdit: Todo = Todo()
     var delegate: TodoDelegate!
     
     init(withTodo: Todo) {
@@ -41,13 +41,13 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
         todoStatusTableView.delegate = self
         todoStatusTableView.dataSource = self
         todoStatusTableView.register(UITableViewCell.self, forCellReuseIdentifier: "todoStatusCellIdentifier")
-        todoTextView.text = todoToEdit?.name
+        todoTextView.text = todoToEdit.name
     }
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        todoToEdit?.name = self.todoTextView.text
-        delegate.TodoWasModified(todo: todoToEdit!)
+        todoToEdit.name = self.todoTextView.text
+        delegate.TodoWasModified(todo: todoToEdit)
     }
     
     private func installViewProperties() {
@@ -75,7 +75,7 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
         let optionMenu = UIAlertController(title: nil, message: "Delete This Todo?", preferredStyle: .actionSheet)
 
             let deleteAction = UIAlertAction(title: "Delete", style: .default, handler: { [self](alert: UIAlertAction!) -> Void in
-                delegate.TodoWasDelted(todo: todoToEdit!)
+                delegate.TodoWasDelted(todo: todoToEdit)
                 navigationController?.popViewController(animated: true)
             })
         
@@ -90,31 +90,16 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (self.todoToEdit?.statuses.count)!
+        return (self.todoToEdit.statuses.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoStatusCellIdentifier", for: indexPath)
-        let statusOption = todoToEdit?.statuses[indexPath.row]
+        let statusOption = todoToEdit.statuses[indexPath.row]
         
-        
-        //todoToEdit?.todoStatus == .isComplete
-        
-//        switch indexPath.row {
-//        case 0:
-//
-//            cell.accessoryType = todoToEdit?.todoStatus == .isComplete ? .checkmark : .none
-//            
-//        case 1:
-//            cell.accessoryType = todoToEdit?.todoStatus == .isComplete ? .checkmark : .none
-//            //cell.accessoryType = todoToEdit!.isComplete ? .checkmark : .none
-//       
-//        default:
-//            todoToEdit?.isComplete = false
-//        }
-        
-        cell.textLabel?.text = statusOption?.displayName
+        cell.accessoryType = todoToEdit.statuses[indexPath.row].isSelected ? .checkmark : .none
+        cell.textLabel?.text = statusOption.displayName
         cell.selectionStyle = .none
         cell.tintColor = .red
 
@@ -122,23 +107,24 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+        let result  = self.todoToEdit.statuses[indexPath.row]
+
+        resetStatuses()
         
-        switch indexPath.row {
-        case 0:
-            todoToEdit?.isComplete = true
-        case 1:
-            todoToEdit?.isComplete = false
-        default:
-            return
-        }
+        todoToEdit.statuses[indexPath.row].isSelected = !result.isSelected
         
-        todoToEdit?.isComplete = !self.todoToEdit!.isComplete
         todoStatusTableView.reloadData()
     }
 
   
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Todo Status"
+    }
+    
+    
+    func resetStatuses() {
+        self.todoToEdit.statuses.forEach({ $0.isSelected = false})
     }
 }
 
