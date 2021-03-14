@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class todoTableViewController: UITableViewController {
+class TodoTableViewController: UITableViewController {
     
     var todoList: [Todo] = [Todo]()
     var editTodoViewController: EditToDoViewController!
@@ -205,7 +205,7 @@ class todoTableViewController: UITableViewController {
 }
 
 
-extension todoTableViewController: SomeDelegate {
+extension TodoTableViewController: SomeDelegate {
     
     func TodoWasModified(todo: Todo) {
 
