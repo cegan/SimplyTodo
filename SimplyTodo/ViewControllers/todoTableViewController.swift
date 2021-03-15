@@ -112,7 +112,7 @@ class TodoTableViewController: UITableViewController {
     
     
     
-    @objc private func moreOptionsWasTapped(){
+    @objc private func moreOptionsWasTapped() {
        
         let optionMenu = UIAlertController(title: nil, message: "Additional Options", preferredStyle: .actionSheet)
 
