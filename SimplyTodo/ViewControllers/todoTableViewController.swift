@@ -22,11 +22,6 @@ class TodoTableViewController: UITableViewController {
         retrieveTodos()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        todoList = ApplicationTodos.shared.todos
-        tableView.reloadData()
-    }
-    
     private func installRefreshControll() {
         let refreshControl = UIRefreshControl()
         self.refreshControl = refreshControl
