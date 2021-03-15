@@ -29,12 +29,19 @@ class AddNewToDoViewController: UIViewController {
         navigationItem.rightBarButtonItem?.tintColor = .red
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(self.cancelButtonTapped))
         navigationItem.leftBarButtonItem?.tintColor = .red
-        
     }
     
     @objc private func doneButtonTapped() {
-        delegate.TodoWasAdded(todo: Todo(name: todoTextView.text))
-        dismiss(animated: true, completion: nil)
+        
+        if !todoTextView.text.isEmpty {
+            delegate.TodoWasAdded(todo: Todo(name: todoTextView.text))
+            dismiss(animated: true, completion: nil)
+        }
+        else {
+            let alert = UIAlertController(title: "Error", message: "Please Enter A Todo", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
     }
     
     @objc private func cancelButtonTapped(){
