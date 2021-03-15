@@ -45,6 +45,8 @@ class EditToDoViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     override func viewWillDisappear(_ animated: Bool) {
+        
+        /*Check if Todo was actually changed before issuing the update*/
         todoToEdit.name = self.todoTextView.text
         delegate.TodoWasModified(todo: todoToEdit)
     }

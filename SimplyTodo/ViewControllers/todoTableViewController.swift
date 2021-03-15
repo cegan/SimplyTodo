@@ -72,7 +72,7 @@ class TodoTableViewController: UITableViewController {
     }
     
     
-    @objc private func filterTodosoWasTapped(){
+    @objc private func filterTodosoWasTapped() {
         
         let optionMenu = UIAlertController(title: nil, message: "Filter Options", preferredStyle: .actionSheet)
 
@@ -86,23 +86,19 @@ class TodoTableViewController: UITableViewController {
                 tableView.reloadData()
             })
         
-        
             let filterByInComplete = UIAlertAction(title: "Show Incomplete", style: .default, handler: { [self](alert: UIAlertAction!) -> Void in
                 
                 todoList = ApplicationTodos.shared.todos.filter( { !$0.isComplete })
                 tableView.reloadData()
             })
     
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler:
-            {
-                (alert: UIAlertAction!) -> Void in
-               
-            })
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            
             optionMenu.addAction(showAllTodos)
             optionMenu.addAction(filterByCompleted)
             optionMenu.addAction(filterByInComplete)
             optionMenu.addAction(cancelAction)
-            self.present(optionMenu, animated: true, completion: nil)
+            present(optionMenu, animated: true, completion: nil)
     }
     
     
@@ -113,7 +109,7 @@ class TodoTableViewController: UITableViewController {
 
             let clearAllCompleted = UIAlertAction(title: "Delete All Completed", style: .default, handler: { [self](alert: UIAlertAction!) -> Void in
                 
-                let results = self.todoList.filter({ $0.isComplete })
+                let results = todoList.filter({ $0.isComplete })
         
                 //Hanlde thiss better. Expose endpoint that receives array of id's to delete
                 for completedTodos in results {
