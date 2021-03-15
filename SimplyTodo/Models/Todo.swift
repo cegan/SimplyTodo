@@ -11,17 +11,15 @@ import Foundation
 final class Todo: Decodable {
   
     var id: String = ""
-    var name: String!
+    var name: String = ""
     var order: Int = 0
     var isComplete: Bool = false
     var statuses: [TodoStatus] = [TodoStatus(displayName: "Complete"),
                                   TodoStatus(displayName: "InComplete")]
   
-    
     init() {
 
     }
-    
     
     init(name: String) {
         self.name = name

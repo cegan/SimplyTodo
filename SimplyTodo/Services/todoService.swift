@@ -52,7 +52,7 @@ final class TodoService {
     func addTodo(todoToAdd: Todo, success: @escaping (Bool) -> Void) {
         
         let params: Parameters = [
-            "name": todoToAdd.name as Any,
+            "name": todoToAdd.name,
             "isComplete": todoToAdd.isComplete,
             "order": todoToAdd.order,
             "createdAt": ""
@@ -76,7 +76,7 @@ final class TodoService {
     func updateTodo(todoToUpdate: Todo, success: @escaping (Bool) -> Void) {
     
         let params: Parameters = [
-            "name": todoToUpdate.name as Any,
+            "name": todoToUpdate.name,
             "isComplete": todoToUpdate.isComplete,
             "order": todoToUpdate.order,
             "createdAt": ""

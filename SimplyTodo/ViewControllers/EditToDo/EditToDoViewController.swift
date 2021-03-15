@@ -16,7 +16,6 @@ protocol TodoDelegate{
 
 class EditToDoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
  
-   
     @IBOutlet weak var todoStatusTableView: UITableView!
     @IBOutlet weak var todoTextView: UITextView!
     
