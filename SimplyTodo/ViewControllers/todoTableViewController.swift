@@ -117,8 +117,16 @@ class TodoTableViewController: UITableViewController {
         let optionMenu = UIAlertController(title: nil, message: "Additional Options", preferredStyle: .actionSheet)
 
             let clearAllCompleted = UIAlertAction(title: "Delete All Completed", style: .default, handler: { [self](alert: UIAlertAction!) -> Void in
-                ApplicationTodos.shared.todos.removeAll { $0.isComplete }
-                todoList = ApplicationTodos.shared.todos
+                
+                let results = self.todoList.filter({ $0.isComplete })
+        
+                //Hanlde thiss better. Expose endpoint that receives array of id's to delete
+                for completedTodos in results {
+                    
+                    TodoService().deleteTodo(id: completedTodos.id) { wasSuccessful in
+                        retrieveTodos()
+                    }
+                }
                 tableView.reloadData()
             })
     
@@ -129,9 +137,7 @@ class TodoTableViewController: UITableViewController {
             self.present(optionMenu, animated: true, completion: nil)
     }
     
-    
-    
-    
+
     @objc private func retrieveTodos() {
         
         TodoService().retrieveTodos() { results in
@@ -152,7 +158,6 @@ class TodoTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return ApplicationTodos.shared.todos.count
         return todoList.count
     }
     
@@ -183,46 +188,48 @@ class TodoTableViewController: UITableViewController {
         return true
     }
     
-
-    
-    // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
         if editingStyle == .delete {
             
-            let todoToDelete = ApplicationTodos.shared.todos[indexPath.row]
-        
-            if let index = ApplicationTodos.shared.todos.firstIndex(where: {$0.id == todoToDelete.id}) {
-                ApplicationTodos.shared.todos.remove(at: index)
-                todoList = ApplicationTodos.shared.todos
+            TodoService().deleteTodo(id: todoList[indexPath.row].id) { wasSuccessful in
+                if wasSuccessful {
+                    self.retrieveTodos()
+                }
             }
-            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
 }
 
 
+
+//Extention method to handle maintaining ToDo's
 extension TodoTableViewController: TodoDelegate {
     
     func TodoWasModified(todo: Todo) {
-
-        if let index = ApplicationTodos.shared.todos.firstIndex(where: { $0.id == todo.id }) {
-            ApplicationTodos.shared.todos[index] = todo
-            todoList = ApplicationTodos.shared.todos
+        
+        TodoService().updateTodo(todoToUpdate: todo) { wasSuccessful in
+            if wasSuccessful {
+                self.retrieveTodos()
+            }
         }
     }
     
     func TodoWasDelted(todo: Todo) {
-       
-        if let index = ApplicationTodos.shared.todos.firstIndex(where: {$0.id == todo.id}) {
-            ApplicationTodos.shared.todos.remove(at: index)
-            todoList = ApplicationTodos.shared.todos
-            tableView.reloadData()
+        
+        TodoService().deleteTodo(id: todo.id) { wasSuccessful in
+            if wasSuccessful {
+                self.retrieveTodos()
+            }
         }
     }
     
     func TodoWasAdded(todo: Todo) {
-        ApplicationTodos.shared.todos.append(todo)
-        todoList = ApplicationTodos.shared.todos
-        tableView.reloadData()
+        
+        TodoService().addTodo(todoToAdd: todo) { wasSuccessful in
+            if wasSuccessful {
+                self.retrieveTodos()
+            }
+        }
     }
 }
